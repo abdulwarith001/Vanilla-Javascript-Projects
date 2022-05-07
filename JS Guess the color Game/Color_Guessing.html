@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Color Game</title>
+  <link rel="stylesheet" href="colorGame.css">
+  <script src="colorGame.js" defer></script>
+  <link rel="stylesheet" href="fonts.css">
+</head>
+
+<body>
+  <h1 class="header">JS Guess the color Game</h1>
+
+  <div class="container">
+    <div class="pickedColorContainer" id="pickedDisplay"></div>
+
+    <div class="strip">
+      <span class="newColors" id="resetGameBtn">New Colors</span>
+      <span class="messageDisplay" id="msgDisplay">Click a Box to guess</span>
+      <span class="score" id="livesDisplay">❤❤</span>
+    </div>
+
+    <div class="boxContainer">
+      <div class="boxs" onclick="compareColor(this)"></div>
+      <div class="boxs" onclick="compareColor(this)"></div>
+      <div class="boxs" onclick="compareColor(this)"></div>
+      <div class="boxs" onclick="compareColor(this)"></div>
+      <div class="boxs" onclick="compareColor(this)"></div>
+      <div class="boxs" onclick="compareColor(this)"></div>
+    </div>
+
+  </div>
+</body>
+
+</html>

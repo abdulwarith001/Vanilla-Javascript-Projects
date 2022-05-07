@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background: url("kajetan-sumila-M9-UphDC7jE-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    font-size: 16px;
+}
+
+
+.header {
+    color: rgba(202, 202, 101, 0.452);
+    font-size: 40px;
+    font-family: 'Righteous', sans-serif;
+}
+
+.container {
+    margin: 20px auto;
+    width: 60%;
+    height: 7cm;
+    background: rgba(238, 255, 0, 0.308);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px 65px;
+    box-shadow: 5px 5px 10px yellow,
+        -5px -5px 10px yellow;
+}
+
+#display {
+    color: yellow;
+    font-size: 2rem;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-family: 'Stint Ultra Condensed', courier;
+}
+
+#inputValue {
+    background: transparent;
+    width: 90%;
+    height: 1.5cm;
+    border: 1px double yellow;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    font-weight: bolder;
+    outline: none;
+    font-size: medium;
+}
+
+#inputValue:focus {
+    box-shadow: 2px -2px 10px rgba(255, 255, 255, 0.322),
+                -2px 2px 10px rgba(0, 0, 0, 0.356);
+    border: none;
+}

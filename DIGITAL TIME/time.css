@@ -1,0 +1,56 @@
+*{
+   margin:0 auto;
+   padding: auto;
+}
+
+body{
+   background: linear-gradient(to left,rgb(46, 189, 255),rgb(7, 85, 158));
+}
+
+.header{
+    color: rgb(152, 198, 219);
+   font-size: 45px;
+   font-family: 'Righteous', sans-serif;
+   cursor: default;
+}
+
+.container{
+   background: skyblue;
+   margin: 30px auto;
+   width: 60%;
+   height: 7.5cm;
+   border: none;
+   padding: 30px;
+   border-radius: 30px 90px;
+   text-align: center;
+   box-shadow:  inset 4px 4px 10px rgba(255, 252, 254, 0.349),
+               inset -4px -4px 10px rgba(0, 0, 0, 0.493),
+               20px 20px rgba(0, 0, 0, 0.185);
+}
+
+#timeText{
+   font-family: 'Sofia', courier;
+   color: rgb(32, 22, 170);
+   font-size: 19px;
+   font-weight: bolder;
+   letter-spacing: 2px;
+   margin: 8px 16px;
+   cursor: not-allowed;
+}
+
+#screen{
+   font-size: 53px;
+   width: 100%;
+   height: 3.7cm;
+   margin-top: 39px;
+   color: rgb(10, 3, 48);
+   font-family:'Bungee Inline', fantasy;
+   box-shadow:  -3px -3px 4px rgba(255, 255, 255, 0.286),
+                 3px 3px 4px rgba(0, 0, 0, 0.314);
+   border-radius: 30px;
+   display: grid;
+   place-items: center;
+   cursor: none;
+   letter-spacing: 1px;
+}
+

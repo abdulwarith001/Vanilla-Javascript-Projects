@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wire {
+    width: 8px;
+    height: 30vh;
+    background: rgba(255, 255, 255, 0.351);
+}
+
+.handle {
+    width: 5.5em;
+    height: 4.5em;
+    border-radius: 1em 1em 0 0;
+    background-color: rgba(255, 255, 255, 0.102);
+}
+
+.rectangle {
+    width: 5.5em;
+    height: 3em;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1;
+    transition: all 0.7s ease-in;
+}
+
+.circle {
+    width: 12.6em;
+    height: 12.6em;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: -1.3em;
+    transition: all 0.7s ease-in;
+}
+
+.buttons {
+    padding: 0.5em;
+    margin-top: 15px;
+    font-size: 1em;
+    background: transparent;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow:  1px 1px 2px white,
+    -1px -1px 2px white;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.buttons:hover{
+    background: linear-gradient(to left, blue, red);
+    box-shadow: none;
+}
+
+.buttons:active{
+    transform: scale(1.5);
+}
+
+.btnContainer{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}

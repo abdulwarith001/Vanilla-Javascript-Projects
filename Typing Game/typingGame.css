@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('bernd-dittrich-WspHHobgkKo-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  font-size: 45px;
+  font-family: 'Righteous', sans-serif;
+  color: rgba(255, 255, 255, .65);
+}
+
+.container {
+  margin: 20px auto;
+  width: 60%;
+  background: rgba(255, 255, 255, .30);
+  text-align: center;
+  height: 10cm;
+  border-radius: 30px;
+  padding: 25px;
+  box-shadow: inset 5px 5px 15px RGBA(0, 0, 2, 0.485),
+    inset -5px -5px 15px RGBA(0, 0, 2, 0.485),
+    -20px 20px RGBA(0, 0, 2, 0.21);
+}
+
+.counter {
+  background: linear-gradient(to right, lightgreen, orangered);
+  color: rgba(255, 255, 255, .95);
+  width: fit-content;
+  padding: 15px;
+  margin: auto;
+  font-size: 3.3em;
+  font-family: 'Righteous', fantasy;
+  border-radius: 50px;
+  box-shadow: 3px 3px 8px RGBA(255, 0, 0, 0.2),
+    -3px -3px 8px RGBA(255, 0, 0, 0.2);
+  animation: animeCounter 0.8s infinite;
+}
+
+@keyframes animeCounter {
+  0% {
+    transform: scale(1)
+  }
+
+  50% {
+    transform: scale(1.2)
+  }
+}
+
+.wordContainer {
+  color: RGBA(200, 0, 0, 1);
+  font-weight: bolder;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background: rgba(255, 255, 255, .30);
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#input {
+  width: 80%;
+  margin-top: 10px;
+  height: 0.7cm;
+  font-size: 19px;
+  padding: 18px;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px dotted orangered;
+  outline: none;
+  font-style: oblique;
+}
+
+#input:focus {
+  border: none;
+  box-shadow: 3px 3px 8px RGBA(255, 0, 0, 0.40),
+    -3px -3px 8px RGBA(255, 0, 0, 0.40);
+}
+
+.btn {
+  font-size: 20px;
+  padding: 9px;
+  margin-top: 15px;
+  border-radius: 18px;
+  border: none;
+  color: rgba(255, 255, 255, .90);
+  background: linear-gradient(to right, lightgreen, orangered);
+  cursor: pointer;
+  box-shadow: 3px 3px 5px RGBA(255, 0, 0, 0.279),
+    -3px -3px 5px RGBA(255, 0, 0, 0.279);
+  font-family: 'Righteous', serif;
+  transition: transform 1s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}

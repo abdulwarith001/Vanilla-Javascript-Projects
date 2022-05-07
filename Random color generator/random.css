@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    font-size: 40px;
+    font-family: 'Bangers', sans-serif;
+    color: RGBA(0, 0, 149, 0.239);
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+    box-shadow: inset 10px 10px 20px RGBA(0, 0, 0, 0.141),
+        inset -10px -10px 10px RGBA(0, 0, 0, 0.264);
+    text-align: center;
+}
+
+.score {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 6px;
+    text-align: center;
+    font-family: 'Sofia', courier;
+    border-radius: 60px;
+}
+
+#score {
+    color: red;
+    font-family: 'Righteous', fantasy;
+}
+
+#textDisplay {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: -6px -6px 8px RGBA(0, 0, 0, 0.141),
+        6px 6px 8px RGBA(0, 0, 0, 0.164);
+    color: RGBA(0, 0, 149, 0.839);
+    font-family: 'Righteous', serif;
+    cursor: not-allowed;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 25px;
+    margin: 10px auto;
+    border-radius: 20px;
+    font-weight: bolder;
+    border: none;
+    box-shadow: -6px -6px 8px RGBA(0, 0, 0, 0.141),
+        6px 6px 8px RGBA(0, 0, 0, 0.264);
+    cursor: pointer;
+    transition: background 2s, color 0.5s;
+    color: RGBA(0, 0, 255, 0.617);
+    font-family: 'Righteous', serif;
+}
+
+.btn:hover {
+    background: linear-gradient(to left, rgb(0, 181, 194), rgba(0, 0, 161, 1));
+    color: white;
+}
+
+.boxs {
+    width: 7.5em;
+    height: 2.9cm;
+    background-color: rgba(0, 0, 0, 0.324);
+    display: inline-block;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out, background 1s, box-shadow 1s ease;
+}
+
+
+.boxs:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.278),
+        -5px -5px 10px rgba(0, 0, 0, 0.278);
+}

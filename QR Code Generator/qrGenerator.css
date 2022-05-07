@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('EoxYtssWMAAKCbT.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  font-size: 2.6rem;
+  color: rgba(100, 0, 0, 0.784);
+  font-family: sans-serif;
+}
+
+.mainWrapper {
+  background: rgba(255, 255, 255, 0.39);
+  width: 50%;
+  margin: 5em auto;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px black,
+    -3px -3px 4px white;
+}
+
+
+.logo {
+  font-size: 1.7rem;
+  width: 8.6em;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgb(218, 7, 7);
+  font-family: sans-serif;
+  border-right: 3px solid rgba(0, 0, 0, 0.841);
+  /* text-align: center; */
+  margin-bottom: 0.5em;
+  animation: typing 3.6s steps(15) infinite,
+    blicking 1s infinite;
+  font-style: oblique;
+  font-family: courier;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blicking {
+  50% {
+    border-right: 3px solid transparent;
+  }
+}
+
+.textInput {
+  width: 80%;
+  height: 5vh;
+  margin-left: 1.5em;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.441);
+  padding: 0.1em;
+}
+
+.qrCodeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}
+
+.sucessfulMsg {
+  color: white;
+  background: linear-gradient(to left, rgb(249, 71, 0), rgba(249, 120, 0, 0.613));
+  width: fit-content;
+  padding: 0.3em;
+  font-size: 1.5em;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 20%;
+  left: 35%;
+  border-radius: 10px;
+  font-weight: bolder;
+  display: none;
+}

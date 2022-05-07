@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  font-size: 3em;
+  font-family: 'Righteous', sans-serif;
+  color: rgba(0, 0, 100, .60);
+}
+
+.container {
+  margin: 20px auto;
+  width: 30em;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: inset 10px 10px 20px RGBA(0, 0, 0, 0.1),
+    inset -10px -10px 10px RGBA(0, 0, 0, 0.1);
+}
+
+.pickedColorContainer {
+  font-size: 2.6em;
+  font-family: 'Righteous', fantasy;
+  text-align: center;
+  color: rgba(0, 0, 45, 1);
+}
+
+.strip {
+  background: rgba(0, 0, 45, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 0.7em 0;
+  border-radius: 10px;
+  padding: 0 0.5em;
+  font-size: 1.1rem;
+  font-family: 'Courgette', sans-serif;
+}
+
+.newColors {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.newColors:hover {
+  background: rgba(182, 182, 221, 0.2);
+
+}
+
+.score {
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: rgb(224, 9, 9);
+}
+
+.boxContainer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 2em;
+}
+
+.boxs {
+  width: 8em;
+  height: 8em;
+  background-color: rgba(0, 0, 0, 0.124);
+  border-radius: 40px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out, background 1s, box-shadow 1s ease;
+}
+
+
+.boxs:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(0, 0, 0, 0.2);
+}

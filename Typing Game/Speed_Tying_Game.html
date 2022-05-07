@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="typingGame.css">
+  <link rel="stylesheet" href="fonts.css">
+  <script src="typingGame.js" defer></script>
+</head>
+
+<body>
+  <h1 class="header">Speed Typing Game</h1>
+  <div class="container">
+    <div id="countdown" class="counter">60</div>
+
+    <div id="wordContainer" class="wordContainer">How many words can you type in 60 seconds?</div>
+
+    <input type="text" name="text" id="input" oninput="
+        compareWords()" />
+    <br />
+    <input type="button" value="Start Game" id="startgame" onclick="startGame()" class="btn" />
+  </div>
+</body>
+
+</html>

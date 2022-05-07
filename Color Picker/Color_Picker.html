@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" type="text/css" href="color.css" />
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <script src="color.js" defer></script>
+</head>
+
+<body>
+    <h1 class="header">Color Picker</h1>
+
+    <div class="container">
+        <div id="display"></div>
+        <input type="text" placeholder="Color code is displayed HERE" id="textarea" readonly>
+        <div>
+            <label class="red">Red:</label>
+            <input type="range" min="0" max="255" value="0" id="red" oninput="displayColor()">
+        </div>
+
+        <div>
+            <label class="green">Green:</label>
+            <input type="range" min="0" max="255" value="0" id="green" oninput="displayColor()">
+        </div>
+
+        <div>
+            <label class="blue">Blue:</label>
+            <input type="range" min="0" max="255" value="0" id="blue" oninput="displayColor()">
+        </div>
+        <div>
+            <label class="opacity">Alpha:</label>
+            <input type="range" min="0" max="1" step="0.001" id="opacity" oninput="displayColor()">
+        </div>
+
+        <input type="button" value="Copy color code"  class="btn" id="button">
+    </div>
+</body>
+
+</html>

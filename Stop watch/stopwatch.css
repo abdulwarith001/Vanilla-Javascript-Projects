@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('jene-stephaniuk-6UQTHH6hcUo-unsplash.jpg');
+}
+
+.header {
+  color: rgb(218, 161, 210);
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: 'Stint Ultra Condensed', sans-serif;
+}
+
+.container {
+  background-color: rgb(206, 170, 197);
+  margin: 15px auto;
+  width: 50%;
+  height: 9cm;
+  text-align: center;
+  padding-top: 5px;
+  box-shadow: inset 5px 5px 15px rgba(253, 252, 255, 0.339),
+    inset -5px -5px 15px rgba(1, 0, 0, 0.439),
+    20px 20px rgba(255, 0, 106, 0.126);
+  border-radius: 50px;
+}
+
+#counter {
+  color: rgb(245, 195, 238);
+  font-size: 50px;
+  background-color: rgb(185, 8, 126);
+  margin: 20px auto;
+  width: 30%;
+  height: 3cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: not-allowed;
+  font-family: 'Bangers', fantasy;
+  border-radius: 100px;
+  box-shadow: -2px -2px 8px rgba(255, 254, 255, 0.376),
+    2px 2px 8px rgba(0, 0, 0, 0.545);
+  transition: width 0.5s, box-shadow 0.5s;
+}
+
+#counter:hover {
+  width: 120px;
+  box-shadow: -5px -5px 17px rgba(255, 254, 255, 0.376),
+    5px 5px 17px rgba(0, 0, 0, 0.545);
+}
+
+span {
+  background: transparent;
+  font-size: 40px;
+  font-family: 'Bungee Inline', monospace;
+  color: rgb(139, 30, 125);
+  cursor: not-allowed;
+}
+
+.allbtns {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.buttons {
+  color: rgb(107, 2, 81);
+  padding: 4px;
+  width: 70px;
+  font-size: large;
+  font-family: 'Sofia', arial;
+  background: transparent;
+  border: none;
+  box-shadow: 3px -3px 16px white,
+    -3px 3px 16px black;
+  border-radius: 7px;
+  font-weight: bolder;
+  transition: background-color 0.5s ease-in, transform 0.5s ease-out;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background: rgb(107, 2, 81);
+  color: rgb(245, 195, 238);
+  transform: scale(1.2);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+    <link rel="stylesheet" href="random.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="random.js" defer></script>
+</head>
+
+<body>
+    <h2 class="header">Can You Guess My Color Box?</h2>
+
+    <div class="container">
+        <div class="score">Current Score: <span id="score">0</span></div>
+        <div id="textDisplay">Click a Color Box to guess...</div>
+        <div id="container1" class="boxs" onclick="makeColor(this)"></div>
+        <div id="container2" class="boxs" onclick="makeColor(this)"></div>
+        <div id="container3" class="boxs" onclick="makeColor(this)"></div>
+        <div id="container4" class="boxs" onclick="makeColor(this)"></div>
+        <div id="container5" class="boxs" onclick="makeColor(this)"></div>
+        <div id="container6" class="boxs" onclick="makeColor(this)"></div>
+        <button onclick="colorBoxes()" class="btn">Grab New Colors</button>
+    </div>
+</body>
+
+</html>
